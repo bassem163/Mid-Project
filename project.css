@@ -1,0 +1,580 @@
+:root{
+    --main-color:rgb(31,31,31);
+    --padding: 110px 0px;
+    --second-color:#787878;
+    --baby-blue: #00C3DA;
+    --main-font: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+body{
+    font-family: sans-serif !important;
+    color: black !important;
+}
+
+/* NavBar */
+.navbar-brand img{
+    max-height: 40px;
+}
+.nav-item{
+    padding: 0px 8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.nav-item i{
+    padding: 0px 8px;
+    cursor: pointer;
+}
+
+/* Home */
+.car-back1{
+    background-image:linear-gradient(rgba(31,31,31,0.55)), url(bg-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.car-back2{
+    background-image:linear-gradient(rgba(31,31,31,0.55)), url(bg-image-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.home-arrows button{
+    width: 50px !important;
+    height: 50px !important;
+    border: solid white !important;
+    border-width: 1px 1px 1px 0px !important;
+}
+.arrow-left{
+    top: 42%;
+    bottom: unset;
+}
+.arrow-right{
+    top: 50%;
+    bottom: unset;
+    left: 0;
+}
+.home-arrows span{
+    position: relative;
+    transition: all 0.3s;
+}
+.overlay1{
+    position: absolute;
+    left: -50px;
+    top: 0px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+.arrow-left:hover .overlay1{
+    left: 0;
+}
+.arrow-left:hover span{
+    color: var(--second-color);
+}
+.overlay2{
+    position: absolute;
+    left: -50px;
+    top: 0px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+.arrow-right:hover .overlay2{
+    left: 0;
+}
+.arrow-right:hover span{
+    color: black;
+}
+.carousel-inner h1{
+    margin: 20px 0px 10px;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 125px;
+}
+.carousel-inner h4{
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.home-buttons{
+    margin-top: 25px;
+}
+.home-buttons button{
+    height: 50px;
+    padding: 0px 30px;
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 50px;
+}
+.home-buttons .blue-button{
+    background-color: var(--baby-blue);
+    transition: all 0.3s;
+}
+.home-buttons .reg-button{
+    margin-left: 15px;
+    border: 1px solid white;
+    transition: all 0.3s !important;
+}
+.reg-button:hover{
+    background-color: white !important;
+    color: black !important;
+}
+.blue-button:hover{
+    background-color: #00d5ee;
+    transform: translateY(-1px);
+}
+
+/* Who We Are */
+.who-we-are{
+    padding: var(--padding);
+}
+.who-we-are-text{
+    margin-bottom: 25px;
+}
+.who-we-are-text h6{
+    margin-bottom: 10px;
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
+}
+.who-we-are-text p{
+    margin: 20px 0px;
+    color: var(--second-color);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+}
+.who-we-are-text span{
+    color: var(--baby-blue);
+}
+.who-we-are-text button{
+    margin-top: 25px;
+    height: 50px;
+    padding: 0px 30px;
+    border: 1px solid rgb(222, 222, 222);
+    background-color: transparent;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 48px;
+    transition: all 0.3s;
+}
+.who-we-are-text button:hover{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+/* Creative Team */
+.creative-team{
+    padding: var(--padding);
+}
+.creative-title{
+    margin-bottom: 25px;
+}
+.creative-title h2{
+    color: var(--main-color);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 20px 0px 10px;
+    position: relative;
+}
+.creative-title h2::before{
+    content: 'C';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -38px;
+    margin: auto;
+    opacity: 0.06;
+    color: rgb(31, 31, 31);
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 99px;
+}
+.creative-title h4{
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 10px 0px;
+}
+.team{
+    padding: 25px 0px;
+}
+.team-member{
+    position: relative;
+}
+.team-member-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color:rgba(0, 195, 218, 0.9) ;
+    transition: all 0.3s !important;
+}
+.team-socials{
+    padding: 20px;
+}
+.team-socials i{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-right: 10px;
+}
+.team-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+.team-info h4{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
+}
+.team-info span{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.team-member-overlay:hover{
+    opacity: 1 !important;
+}
+
+/* What We Do */
+.what-we-do{
+    padding: var(--padding);
+    background-color: #626262;
+}
+.box{
+    padding: 0px 15px;
+    margin: 25px 0px;
+}
+.inner-box{
+    padding: 0px 10px;
+    margin: 25px 0px;
+}
+.inner-box h4{
+    margin-bottom:10px ;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
+}
+.what-title{
+    margin-bottom: 25px;
+}
+.padding-25{
+    padding: 25px 0px;
+}
+.what-title h2{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    position: relative;
+}
+.what-title h2::before{
+    content: 'W';
+    position: absolute;
+    left: -11.4px;
+    right: 0;
+    top: -38px;
+    opacity: 0.06;
+    color: rgb(255, 255, 255);
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 99px;
+}
+.txt p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.margin-25{
+    margin-top: 25px;
+}
+.checklist ul{
+    list-style: none;
+}
+.checklist li{
+    padding: 6px 0px;
+}
+.checkmark{
+    margin-right: 10px;
+} 
+
+/* Cheap Prices */
+.cheap-prices{
+    padding: var(--padding);
+    background-color: #F7F7F7;
+}
+.cheap-title{
+    margin-bottom: 25px;
+}
+.cheap-title h2{
+    color: var(--main-color);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 20px 0px 10px;
+    position: relative;
+}
+.cheap-title h2::before{
+    content: 'C';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -38px;
+    margin: auto;
+    opacity: 0.06;
+    color: rgb(31, 31, 31);
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 99px;
+}
+.cheap-title h4{
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 10px 0px;
+}
+.pricing-table{
+    margin: 50px 0px 25px;
+    padding: 45px 35px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+.featured{
+    transform: scale(1.08);
+}
+.pricing-header h4{
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.price{
+    padding: 15px 0px;
+}
+.price h2{
+    color: var(--main-color);
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 71px;
+}
+.price span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    vertical-align: top;
+}
+.blue-color{
+    color: var(--baby-blue) !important;
+}
+.features{
+    margin-top: 15px;
+    list-style: none;
+    position: relative;
+    left: -30px;
+}
+.features span{
+    color: var(--second-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.features li{
+    padding: 8px 0px;
+}
+.pricing-button{
+    padding: 20px 0px;
+}
+.pricing-button button{
+    height: 40px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    border: 0px solid white;
+    background-color: var(--baby-blue);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 40px;
+    transition: all 0.3s;
+}
+.pricing-button:hover button{
+    background-color: #00d5ee;
+    transform: translateY(-1px);
+}
+.featured-label{
+    padding: 5px 10px;
+    background-color: var(--baby-blue);
+    border-radius: 15px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+/* Happy Customer */
+.happy-customer{
+    padding: var(--padding);
+    background-color: #F7F7F7;
+}
+.happy-title h6{
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
+}
+.carousel-data{
+    max-width: 750px;
+    margin: 0px auto;
+    padding: 75px 100px;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+.carousel-image{
+    width: 100px;
+    height: 100px;
+    transform: translateY(50%);
+}
+.carousel-data h4{
+    margin: 25px 0px 10px;
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+}
+.carousel-data span{
+    color: var(--second-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.carousel-data p{
+    margin: 25px 0;
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+.indicators2 button{
+    width: 11px !important;
+    height: 11px !important;
+    border-radius: 50% !important;
+    margin: 0 4px !important;
+    background-color: var(--baby-blue) !important;
+}
+.carousel2-button{
+    color: var(--second-color);
+    height: 50px;
+    top: 50%;
+    bottom: unset;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.button-left{
+    transition: all 0.3s;
+}
+.button-left:hover{
+    left: -20px;
+    color: var(--baby-blue);
+}
+.button-right{
+    transition: all 0.3s;
+}
+.button-right:hover{
+    right: -20px;
+    color: var(--baby-blue);
+}
+
+/* Get In Touch */
+.get-in-touch .row{
+    margin: 0px 12px;
+}
+.get-title{
+    position: relative;
+    margin-bottom: 25px;
+}
+.get-title h2{
+    margin: 20px 0 10px;
+    color: var(--main-color);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.get-title h4{
+    margin: 10px 0;
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.get-title h2::before{
+    content: 'G';
+    position: absolute;
+    left: -11.4px;
+    right: 0;
+    top: -38px;
+    margin: auto;
+    opacity: 0.06;
+    color: rgb(31, 31, 31);
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 99px;
+}
+.get-in-form{
+    padding: 0 100px;
+}
+.form{
+    padding: 25px 0;
+}
+.form-group{
+    margin-bottom: 25px;
+}
+.form-group label{
+    margin-bottom: 5px;
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.form-group input{
+    padding: 0 15px;
+    height: 50px;
+    border: 2px solid rgb(238, 238, 238);
+}
+.height110{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    height: 110px !important;
+}
+.getin-button button{
+    padding: 0 30px;
+    background-color: var(--baby-blue);
+    height: 50px;
+    border-radius: 4px;
+    border: 0px solid var(--baby-blue);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 50px;
+    transition: all 0.3s;
+}
+.getin-button:hover button{
+    background-color: #00d5ee;
+    transform: translateY(-1px);
+}
